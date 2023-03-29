@@ -3,7 +3,7 @@
 <head>
   <head>
     <!-- for-mobile-apps -->
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="theme-color" content="#25274d">
     <meta name="description" content="A Train seat reservation system ">
@@ -26,14 +26,14 @@
     <meta name="msapplication-TileColor" content="#2b5797" />
 
     <!-- //for-mobile-apps -->
-    <title>Train Seat Reservation System</title>
+    <title>Make My Journey</title>
     <!-- icons -->
-    <link rel="icon" type="image/png" href="images/logo-96.png" sizes="96x96" />
-    <link rel="icon" type="image/png" href="images/logo-16.png" sizes="16x16" />
-    <link rel="icon" type="image/png" href="images/logo-32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="images/logo-64.png" sizes="64x64" />
-    <link rel="icon" type="image/png" href="images/logo-128.png" sizes="128x128" />
-    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="../lohot.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="../lohot.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="../lohot.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../lohot.png" sizes="64x64" />
+    <link rel="icon" type="image/png" href="../lohot.png" sizes="128x128" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../lohot.png" />
     <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5" />
     <link rel="manifest" href="site.webmanifest">
     <!-- end of icons  -->
@@ -46,7 +46,14 @@
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
     <link href="fonts/material-design-icons/material-icon.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="plugins/material-datetimepicker/bootstrap-material-datetimepicker.css" />
-  <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/material.min.css">
+    <link rel="stylesheet" type="text/css" href="plugins/lobibox/css/lobibox.min.css">
+    <link rel="stylesheet" type="text/css" href="css/simplelightbox.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+      <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/material.min.css">
@@ -67,8 +74,10 @@
 </head>
 <style type="text/css">
   body {
- background-image: url("b1g.jpg");
- background-color: #cccccc;
+  background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(240)'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%234FE'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='540' height='450' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.1'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
 }
 
 </style>
@@ -77,13 +86,15 @@
    <nav class="navbar navbar-expand-lg navbar-dark static-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <h1>
-                    <img src="images/p1.png" alt="logo" width="120" height="55" style="margin-top: -10px">
-                    <span>T</span>
-                    <span>R</span>
-                    <span>A</span>
-                       <span>I</span>
+                 <h1>
+                    <!-- <img src="images/p1.png" alt="logo" width="120" height="55" style="margin-top: -10px"> -->
+                    <span>J</span>
+                    <span>O</span>
+                    <span>U</span>
+                       <span>R</span>
                          <span>N</span>
+                            <span>E</span>   
+                            <span>Y</span>
                  
                 </h1>
             </a>
@@ -114,11 +125,14 @@
  <main class="col-md-12">
         <div class="col-md-11 col-lg-9 col-xl-8 mx-auto window">
        <section class="stepper">
-                <ul id="progressbar" style="padding-inline-start:8px;">
-                    <a href="firstpage.html"> <li >Passenger Details</li> </a>
-                    <a href="availabletrain.html"> <li> Train Details</li> </a>
-                    <a href="food.html"> <li>  Book Food &nbsp; &nbsp; &nbsp;</li> </a>
-                    <a href="fetch.html"> <li class="active"> Ticket</li> </a>
+             <ul id="progressbar" style="padding-inline-start:8px;">
+                                  <img  src="../lohot.png" alt="logo" width="100" height="100" style="margin-top: -10px">
+
+                <a href="firstpage.html"> <li >Passenger Details</li> </a>
+                <a href="Hotel/index.html" target="_blank"> <li> Reserve Hotel &nbsp; &nbsp; &nbsp;</li> </a>                    
+                <a href="food.html" target="_blank"> <li>  Order Food &nbsp; &nbsp; &nbsp;</li> </a>
+                <a href="Cab/index.html" target="_blank" > <li> Book Cab</li> </a>
+                <a href="fetch.html"> <li class="active"> Booking </li> </a>
                 </ul>
             </section> 
         </div>
@@ -199,6 +213,7 @@ tr:hover {
 <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<h5 style="text-align:center;font-weight: bold; color: #EFEFEF ;font-style: oblique;">  USER DETAILS</h5>
 <table id="UserDetails">
   <thead>
     <tr>
@@ -219,8 +234,41 @@ tr:hover {
   <tbody>
   </tbody>
 </table> 
+<h5 style="text-align:center;font-weight: bold; color: #000080;font-style: oblique;">  HOTEL DETAILS </h5><table id="HotelDetails">
+  <thead>
+    <tr>
+      <th>Checkin Date</th>
+      <th>Checkout Date</th>
+       <th>Hotel Subscription</th>
 
-<label for="rowIndex">Enter Ticket Row</label>
+    </tr>
+  
+  </thead>
+  <tbody>
+  </tbody>
+</table> 
+
+<h5 style="text-align:center;font-weight: bold; color: #EFEFEF;font-style: oblique;">  
+ CAB DETAILS</h5>
+
+<table id="CabDetails">
+  <thead>
+    <tr>
+      <th>Vehicle Type</th>
+      <th>Vehicle </th>
+      
+
+
+    </tr>
+  
+  </thead>
+  <tbody>
+  </tbody>
+</table> 
+
+
+
+<label for="rowIndex">Enter Row Index</label>
 <input type="number" id="rowIndex">
 <!-- <button id="myBtn" class="btn btn-success" onclick="fetchData()">Get ticket</button> -->
 <br><br>
@@ -509,7 +557,7 @@ function processPayment(paymentData) {
   bottom: -10px;
   z-index: -1;
   opacity: 0.3;
-  background-image: url("logo.png");
+  background-image: url("https://d22109rw628vry.cloudfront.net/blog/articles/TCXVP8yGG5.jpg");
   background-repeat: repeat;
 }
 
@@ -592,13 +640,14 @@ function processPayment(paymentData) {
   height: 80px;
 }
 
-.ticket-footer {
-  background-image: url(logo.png);
+/*.ticket-footer {
+  background-image: url(../lohot.png);
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 50%;
-  height: 50px;
+  background-size: 70%;
+  height: 150px;
   text-align: center;
+  position: relative;
 }
 
 .ticket-footer p {
@@ -606,7 +655,7 @@ function processPayment(paymentData) {
   font-size: 14px;
   margin: 0;
   padding-top: 10px;
-}
+}*/
 
 </style>
 
@@ -614,20 +663,30 @@ function processPayment(paymentData) {
 <div id="myModal" class="ticket-card">
   <div class="ticket-header">
     <span style="font-weight:bold;" class="close">&times;</span>
-    <h2>Train Ticket</h2>
+    <h2>USER PASS</h2>
   </div>
   <div id="ticket-content" class="ticket-content">
 
     <div class="ticket-info">
        <p id="User">Passenger Name :<b id="name" > </b></p>
-      <p>From : <b id="frombox" > </b> </p>
-      <p>To :  <b id="to" > </b> </p>
-      <p>Seats :<b id="seats" > </b> </p>
-      <p>Date : <b id="date" > 2023-03-04 </b> </p>
-        <p>Time : <b id="time" > </b> </p>
+                <p>Adhar ID          : <b id="adhar-b" > </b> </p>
+
+      <p>Source          : <b id="frombox" > </b> </p>
+      <p>Destination      :   <b id="to" > </b> </p>
+      <p>Mail Id :  <b id="mailbox" > </b> </p>
+      <!-- <p>Journey Date       : <b id="time" > </b> </p> -->
+            <p>Price         : <b id="price-b" > </b> </p>
+     
+     <!--  <p>Type             :  <b id="type" > Prime</b> </p>
+       <p>Vehicle Preferred :  <b id="vehicle-pref" > Auto</b> </p>
+      <p>Hotel Subscription :  <b id="hotel-subs" > Deluxe</b> </p> -->
     </div>
-    <div class="ticket-barcode">
-      <img src="qr-code.png" alt="Barcode Image">
+    <div style="display: flex;" class="ticket-barcode">
+      <img  style="position: relative;margin-left: -10px;" src="https://media.istockphoto.com/id/1196802224/vector/hotel-on-little-island-in-cartoon-style.jpg?s=1024x1024&w=is&k=20&c=DNObdtLZfjrxPgPKj9tlfv8OriaqmG9Q2iUXR_7PnT4=">
+
+            <img style="position: relative;margin-left: 150px;" src="qr-code.png" alt="Barcode Image">
+
+
     </div>
   </div>
   <div class="ticket-footer">
@@ -739,17 +798,69 @@ closeBtn.addEventListener("click", function() {
 
 </style>
 
+<!-- <p id="name"></p>
+<p id="age"></p>
+<p id="city"></p>
+
+<p id="type"></p>
+
+<p id="vechicleid"></p>
+ --><!-- <input type="number" id="input-box"> -->
+
+
+<!-- JavaScript code to retrieve and display the first row values -->
+<script>
+ var firebaseConfig ={
+    apiKey: "AIzaSyAi9tBGcAb65ALUMf8rx3F8hC_-Cb9ZBRw",
+    authDomain: "hotel-multi.firebaseapp.com",
+    databaseURL: "https://hotel-multi-default-rtdb.firebaseio.com",
+    projectId: "hotel-multi",
+    storageBucket: "hotel-multi.appspot.com",
+    messagingSenderId: "663745625531",
+    appId: "1:663745625531:web:1ada8df5190b0a948f989e"
+  };
+firebase.initializeApp(firebaseConfig);
+var database = firebase.database();
+  var dataRef = database.ref('hotel'); // Replace 'data' with your database reference
+
+  dataRef.orderByKey().limitToFirst(1).once('value', function(snapshot) {
+    snapshot.forEach(function(childSnapshot) {
+      var data = childSnapshot.val();
+      // document.getElementById('date').innerHTML =  data.checkin;
+      // document.getElementById('age').innerHTML = "Age: " + data.checkout;
+      // document.getElementById('hotel-subs').innerHTML = "City: " + data.dropdown3;
+    });
+  });
+
+  var dataRef1 = database.ref('cab'); // Replace 'data' with your database reference
+
+  dataRef1.orderByKey().limitToFirst(1).once('value', function(snapshot1) {
+    snapshot1.forEach(function(childSnapshot1) {
+      var data1 = childSnapshot1.val();
+      // document.getElementById('type').innerHTML = data1.type;
+      // document.getElementById('vehicle-pref').innerHTML = data1.vechicleid;
+    });
+  });
+
+
+</script>
+
+
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
+
 <script>
   
-  var firebaseConfig = {
-    apiKey: "AIzaSyB5gBoIMUbaDn2Glw-s5SRuTFoZ3zhz8AQ",
-    authDomain: "form-91821.firebaseapp.com",
-    databaseURL: "https://form-91821-default-rtdb.firebaseio.com",
-    projectId: "form-91821",
-    storageBucket: "form-91821.appspot.com",
-    messagingSenderId: "908992252495",
-    appId: "1:908992252495:web:b331a9f3f4f0dc1f14f83a",
-    measurementId: "G-LSYVY3HSKV"
+  var firebaseConfig ={
+    apiKey: "AIzaSyAi9tBGcAb65ALUMf8rx3F8hC_-Cb9ZBRw",
+    authDomain: "hotel-multi.firebaseapp.com",
+    databaseURL: "https://hotel-multi-default-rtdb.firebaseio.com",
+    projectId: "hotel-multi",
+    storageBucket: "hotel-multi.appspot.com",
+    messagingSenderId: "663745625531",
+    appId: "1:663745625531:web:1ada8df5190b0a948f989e"
   };
 firebase.initializeApp(firebaseConfig);
 var database = firebase.database();
@@ -765,6 +876,32 @@ database.ref("users").on("value", function(snapshot) {
     $("#UserDetails").append("<tr><td>" + childData.name + "</td><td>" + childData.email + "</td><td>" + childData.adhar + "</td><td>" + childData.phone+ "</td><td>" + childData.passenger + "</td><td>" + childData.price  + "</td><td>" + childData.dropdown1 + "</td><td>" + childData.dropdown2 + "</td><td>" + childData.dropdown3 +"</tr></td>");
   });
 });
+
+
+
+database.ref("hotel").on("value", function(snapshot1) {
+  snapshot1.forEach(function(childSnapshot1) {
+    var childData1 = childSnapshot1.val();
+    console.log(childData1);
+
+      $("#HotelDetails").append("<tr><td>" + childData1.checkin +"</td><td>" + childData1.checkout + "</td><td>" + childData1.dropdown3 + "</tr></td>");
+
+  });
+});
+
+
+
+database.ref("cab").on("value", function(snapshot2) {
+  snapshot2.forEach(function(childSnapshot2) {
+    var childData2 = childSnapshot2.val();
+     $("#CabDetails").append("<tr><td>" + childData2.type + "</td><td>" + childData2.vechicleid + "</tr></td>");
+  });
+});
+
+
+
+
+
 
 
 
@@ -784,9 +921,23 @@ function fetchData()
    const passenger = table.rows[rowIndex].cells[7].innerHTML;
    const price = table.rows[rowIndex].cells[8].innerHTML;
 
+
+
+
 const namebox = document.getElementById("name");
 namebox.innerHTML = `${name}`;
 console.log(namebox);
+
+const adharbox = document.getElementById("adhar-b");
+adharbox.innerHTML = `${adhar}`;
+console.log(adharbox);
+
+const mai= document.getElementById("mailbox");
+mai.innerHTML = `${email}`;
+
+const pricebox = document.getElementById("price-b");
+pricebox.innerHTML = `${dropdown2}`;
+console.log(pricebox);
 
 const frombox = document.getElementById("frombox");
 frombox.innerHTML = `${dropdown3}`;
@@ -806,7 +957,7 @@ console.log(namebox);
 
 const time = document.getElementById("time");
 time.innerHTML = `${price}`;
-console.log(namebox);
+console.log(time);
  
 
 

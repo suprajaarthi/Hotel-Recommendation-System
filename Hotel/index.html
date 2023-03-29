@@ -15,6 +15,16 @@
         <link rel="stylesheet" href="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css">
         <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
         <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+
+           <link rel="icon" type="image/png" href="../lohot.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="../lohot.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="../lohot.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../lohot.png" sizes="64x64" />
+    <link rel="icon" type="image/png" href="../lohot.png" sizes="128x128" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../lohot.png" />
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="manifest" href="site.webmanifest">
+
         <!-- main css -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
@@ -96,7 +106,7 @@
                                         <div class="book_tabel_item">
                                             <div class="input-group">
                                                 <select id="dropdown1" class="wide" required>
-                                                    <option data-display="Adult Peoples">Adult Peoples</option>
+                                                    <option default data-display="Adult"></option>
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
                                                     <option value="3">3</option>
@@ -106,7 +116,7 @@
                                             </div>
                                             <div class="input-group">
                                                 <select id="dropdown2" class="wide">
-                                                    <option data-display="Child">Child</option>
+                                                    <option data-display="Children"></option>
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
                                                     <option value="3">3</option>
@@ -126,12 +136,24 @@
                                             </div>
 
                                                      <input onclick="myAlert()" class="btn btn-outline-warning my-2 my-sm-0 ml-2"  type="submit" />  
-                                                  <!--    <script>
-                                                         function myAlert()
-                                                         {
-                                                            alert("Thanks for submitting your details");
-                                                         }
-                                                     </script> -->
+                                               <script>
+  const form = document.querySelector('#hotel-form');
+
+  form.addEventListener('submit', (event) => {
+    // Prevent the default form submission behavior
+    event.preventDefault();
+
+    // Check if all required fields are filled
+    if (form.checkValidity()) {
+      // Display an alert if all fields are filled
+      alert('Form submitted successfully!');
+    }
+    else{
+          alert('Please Fill all the details!');
+    }
+  });
+</script>
+
 </section>
 
                                                <!-- <button  class="btn btn-outline-warning my-2 my-sm-0 ml-2" onclick="submit()" type="submit">Submit</button> -->
@@ -176,7 +198,7 @@
 
                             </div>
                             <a href="#"><h4 class="sec_h4 header-text" style="font-size: 24px;">Superior Room</h4></a>
-                            <h5>799.000<small>.-/ ₹</small></h5>
+                            <h5>799<small>.-/ ₹</small></h5>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6">
@@ -199,7 +221,7 @@
 
                             </div>
                             <a href="#"><h4 class="sec_h4 header-text" style="font-size: 24px;">Deluxe Room</h4></a>
-                            <h5>999.000<small>.-/ ₹</small></h5>
+                            <h5>999<small>.-/ ₹</small></h5>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6">
@@ -289,7 +311,7 @@
                     <div class="col-md-6 d_flex align-items-center">
                         <div class="about_content ">
                             <h2 class="title title_color header-text">About Us <br>Our History<br>Mission & Vision</h2>
-                            <p> Hotel is one of the Representative hotels in Simpang Empat, West Pasaman Regency which is closest to the City Center, and the West Pasaman Regional Government Complex.
+                            <p>Our Hotel is one of the Representative hotels in West Pasaman Regency which is closest to the City Center, and the Regional Government Complex.
                                 We provide several types of rooms, including VIP, Deluxe and Superior rooms, the types of rooms that we provide have different atmospheres and characteristics, so it really supports you to feel comfortable in all the rooms we provide.</p>
                             <a  href="#room-type" class="button_hover theme_btn_two">Ready to book</a>
                         </div>
@@ -529,7 +551,7 @@
                 <div class="border_line"></div>
                 <div class="row footer-bottom d-flex justify-content-between align-items-center">
                     <p class="col-lg-8 col-sm-12 footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> reserved Hotel  | by <span class="header-text"><a href="www.hilfideveloper.com">Hilfideveloper</a></span></a>
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> reserved Hotel  | by <span class="header-text"><a href="#">Students</a></span></a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                     <div class="col-lg-4 col-sm-12 footer-social">
                         <a href="#"><i class="fa fa-facebook"></i></a>
