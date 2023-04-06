@@ -122,7 +122,7 @@ background-size: cover;
        <section   class="stepper">
 
                 <ul  style="display:initial;justify-content: center" id="progressbar">
-                                     <img  src="../lohot.png" alt="logo" width="100" height="100" style="margin-top: -10px">
+                                     <img  src="./lohot.png" alt="logo" width="100" height="100" style="margin-top: -10px">
 
                    <a href="firstpage.html"> <li>Passenger Details</li> </a>
                 <a href="Hotel/index.html" target="_blank"> <li> Reserve Hotel &nbsp; &nbsp; &nbsp;</li> </a>                    
@@ -177,7 +177,7 @@ import { getFirestore, getDocs, collection } from "https://www.gstatic.com/fireb
   var firebaseConfig = {
     apiKey: "AIzaSyAi9tBGcAb65ALUMf8rx3F8hC_-Cb9ZBRw",
     authDomain: "hotel-multi.firebaseapp.com",
-    databaseURL: "https://hotel-multi-default-rtdb.firebaseio.com",
+    // databaseURL: "https://hotel-multi-default-rtdb.firebaseio.com",
     projectId: "hotel-multi",
     storageBucket: "hotel-multi.appspot.com",
     messagingSenderId: "663745625531",
@@ -206,7 +206,7 @@ sighUp.addEventListener('click',(e) => {
      // Signed in 
       const user = userCredential.user;
       console.log(user);
-      set(ref(database, 'users/' + user.uid),{
+      set(ref(database, 'auth/' + user.uid),{
           username: username,
           email: email
       })
@@ -243,7 +243,7 @@ if (passwordval == password1){
 
         const dt = new Date();
         console.log(user);
-         update(ref(database, 'users/' + user.uid),{
+         update(ref(database, 'auth/' + user.uid),{
           last_login: dt,
         })
            alert('User loged in!');
