@@ -1,4 +1,4 @@
 # Hotel-Recommendation-System
 Hotel Recommendation System
 
-https://journey-management-system.netlify.app/
+https://make-my-journey.netlify.app/
